@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
 import { home } from "../data/dummyData";
@@ -21,7 +22,15 @@ const Hero = () => {
               />
             </h1>
             <p data-aos="fade-left">{item.desc}</p>
-            <button className="primaryBtn">Download CV</button>
+            <button className="primaryBtn" data-aos="fade-up-right">
+              <Link
+                href="https://drive.google.com/file/d/14lYOJPQNlSlpD-QbnzbBTtmtmCVjUbtW/view?usp=sharing"
+                target="_blank"
+                style={{ textDecoration: "none", color: "#e0a80d" }}
+              >
+                Download CV
+              </Link>
+            </button>
           </div>
         ))}
       </section>

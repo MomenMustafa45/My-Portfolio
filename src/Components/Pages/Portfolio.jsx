@@ -29,6 +29,7 @@ const Portfolio = () => {
                 className="primaryBtn"
                 onClick={() => filterItems(item)}
                 key={i}
+                data-aos="zoom-out-down"
               >
                 {item}
               </button>
@@ -38,9 +39,11 @@ const Portfolio = () => {
             {list.map((item, i) => (
               <>
                 <Link
-                  href="https://momenmustafa45.github.io/blog-post-web/"
+                  href={item.url}
                   className="box"
                   target="_blank"
+                  key={i}
+                  data-aos="flip-right"
                 >
                   <div className="img">
                     <img src={item.cover} alt="Hello" />

@@ -10,9 +10,9 @@ const About = () => {
         {about.map((item, i) => (
           <div className="container flex" key={i}>
             <div className="left">
-              <img src={item.cover} alt="cover" />
+              <img src={item.cover} alt="cover" data-aos="fade-down-right" />
             </div>
-            <div className="right">
+            <div className="right" data-aos="fade-down-left">
               <Heading title="About" />
               <p>{item.desc}</p>
               <p>{item.desc1}</p>

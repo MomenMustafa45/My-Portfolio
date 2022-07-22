@@ -5,6 +5,9 @@ import Home from "../Home/Home";
 import Services from "./Services";
 import About from "./About.jsx";
 import Portfolio from "./Portfolio";
+import Testimonials from "./Testimonials";
+import Contact from "./Contact";
+import Footer from "../Common/Footer";
 
 const Pages = () => {
   return (
@@ -16,7 +19,10 @@ const Pages = () => {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
+          <Route exact path="/certification" element={<Testimonials />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

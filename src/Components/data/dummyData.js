@@ -12,9 +12,8 @@ import {
   PhoneIphone,
   EmailOutlined,
   Facebook,
-  Twitter,
-  Instagram,
-  YouTube,
+  LinkedIn,
+  GitHub,
 } from "@mui/icons-material";
 import cover from "../../assets/man.png";
 import port1 from "../../assets/port1.jpg";
@@ -23,6 +22,8 @@ import port3 from "../../assets/port3.jpg";
 import port4 from "../../assets/port4.jpg";
 import port5 from "../../assets/port5.jpg";
 import port6 from "../../assets/port6.jpg";
+import ti1 from "../../assets/team-1.png";
+import ti2 from "../../assets/team-2.jpg";
 
 export const navLink = [
   {
@@ -42,13 +43,10 @@ export const navLink = [
     text: "Portfolio",
   },
   {
-    url: "/testimonials",
-    text: "Testimonials",
+    url: "/certification",
+    text: "Certification",
   },
-  {
-    url: "/blog",
-    text: "Blog",
-  },
+
   {
     url: "/contact",
     text: "Contact",
@@ -113,15 +111,15 @@ export const services = [
 export const social = [
   {
     icon: <Facebook />,
+    url: "https://www.facebook.com/momen.kara",
   },
   {
-    icon: <Twitter />,
+    icon: <LinkedIn />,
+    url: "https://www.linkedin.com/in/momen-mustafa-917280234/",
   },
   {
-    icon: <Instagram />,
-  },
-  {
-    icon: <YouTube />,
+    icon: <GitHub />,
+    url: "https://github.com/MomenMustafa45",
   },
 ];
 
@@ -204,71 +202,38 @@ export const portfolio = [
   },
 ];
 
-export const testimonials = [
+export const certification = [
   {
     id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-1.png",
-    name: "Alamin Musa",
-    post: "Front End Developer",
+    text: "Certificated from Udacity company as frontend developer",
+    image: ti1,
+    name: "Udacity",
+    post: "FrontEnd Developer",
   },
-  {
-    id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-2.png",
-    name: "Alex Ander",
-    post: "Back End Developer",
-  },
-  {
-    id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
-    image: "./images/testimonials/team-3.png",
-    name: "GorkCoder",
-    post: "React Developer",
-  },
-];
 
-export const blog = [
-  {
-    id: 1,
-    title: "Master These Awesome",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b1.png",
-  },
   {
     id: 2,
-    title: "Best Design Items to Appeal",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b2.png",
-  },
-  {
-    id: 3,
-    title: "The 20 Best Lightroom Presets",
-    date: "Jun 27, 2022",
-    author: "Dorian Gray",
-    desc: "Lorem Ipsum has been standard. Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been",
-    cover: "./images/blog/b3.png",
+    text: "Certificated from Udemy company as frontend developer",
+    image: ti2,
+    name: "Udemy",
+    post: "React/React-Native Developer",
   },
 ];
 
 export const contact = [
   {
     icon: <AddLocationOutlined />,
-    text1: "2651 Main Street, Suit 124",
-    text2: "Seattle, WA, 98101",
+    text1: "39 fest street, haram",
+    text2: "Giza, Egypt-11023",
   },
   {
     icon: <PhoneIphone />,
-    text1: "0123456789",
-    text2: "0345627891",
+    text1: "01126134052",
+    text2: "01127078911",
   },
   {
     icon: <EmailOutlined />,
-    text1: "hello@thetheme.io",
-    text2: "inf0@brex-theme.io",
+    text1: "momenkara2@gmail.com",
+    text2: "momenmustafa201@gmail.com",
   },
 ];

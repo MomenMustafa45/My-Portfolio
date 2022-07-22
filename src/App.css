@@ -57,6 +57,10 @@ h6 {
   font-weight: 400;
 }
 
+.homeContainer {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 80%;
   margin: auto;
@@ -87,6 +91,18 @@ button {
 .primaryBtn {
   background: none;
   border: 2px solid var(--primaryColor);
+}
+
+.scrollButton {
+  position: fixed;
+  width: 100%;
+  left: 92%;
+  bottom: 60px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: var(--primaryColor);
 }
 
 /* ====HEADER==== */
@@ -123,13 +139,16 @@ header a {
     display: block;
     background: none;
     font-size: 25px;
+    margin-bottom: 25px;
   }
   .hideMenu {
     display: block;
     position: absolute;
     top: 10vh;
     left: 0;
+    opacity: 1;
     width: 100%;
+    transition: all 1s ease-in-out;
     background-color: var(--headingColor);
   }
 }
@@ -171,6 +190,11 @@ section {
   max-width: 50%;
   margin: auto;
   text-align: center;
+}
+
+.LinkCV {
+  text-decoration: none;
+  color: var(--primaryColor);
 }
 
 .hero h1 {
@@ -302,4 +326,176 @@ article .box:hover .overLay::after {
 
 /* =====ARTICLE===== */
 
-/* */
+/* =====Testimonials=====*/
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.testimonials::after {
+  background-image: url("./assets/testimonials-bg.png");
+}
+
+.testimonials .box {
+  max-width: 60%;
+  margin: auto;
+}
+
+.testimonials i {
+  background-color: var(--white);
+  font-size: 20px;
+  padding: 20px;
+  margin: 30px 0;
+  display: inline-block;
+  color: var(--primaryColor);
+}
+
+.testimonials .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+  border: 3px solid var(--primaryColor);
+}
+.testimonials img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.testimonials label {
+  color: var(--primaryColor);
+  margin: 10px 0;
+  display: inline-block;
+}
+
+/* =====Testimonials=====*/
+
+/* =====Contact===== */
+.contact {
+  margin: 20px 0;
+}
+
+.contactLink {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 17px;
+  background-color: var(--white);
+  color: var(--white);
+  padding: 15px 50px;
+  border-radius: 50px;
+  margin: 50px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.flexContact {
+  display: flex;
+}
+
+.contact .right {
+  width: 60%;
+}
+
+.contact .right,
+.contact .left {
+  padding: 20px;
+}
+
+.contact .flexContact input:nth-child(1) {
+  margin-right: 10px;
+}
+.contact button,
+.contact textarea,
+.contact input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+/* =====Contact===== */
+
+/* =====Footer===== */
+
+footer {
+  text-align: center;
+  background-color: var(--primaryBackground);
+  padding: 70px;
+  margin-top: 50px;
+}
+
+footer i {
+  margin: 5px;
+  color: var(--primaryColor);
+}
+
+.socialIcons {
+  cursor: pointer;
+}
+
+/* =====Footer===== */
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    margin-bottom: 250px;
+  }
+  .heroContainer {
+    max-width: 80%;
+  }
+
+  .hero::after {
+    height: 60vh;
+  }
+
+  section {
+    height: auto;
+    padding-top: 50px;
+  }
+
+  .catButton {
+    flex-direction: column;
+  }
+
+  .testimonials .box p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact .flexsb,
+  .about .flex {
+    flex-direction: column;
+  }
+
+  .contact,
+  .contact .right {
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .grid3,
+  .grid4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .scrollButton {
+    left: 80%;
+  }
+}

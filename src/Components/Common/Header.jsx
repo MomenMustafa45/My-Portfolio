@@ -13,8 +13,8 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="container flexsb">
-          <div className="logo">
+        <div className="container flexsb ">
+          <div className="logo" data-aos="zoom-in-right">
             <Link to="/">
               <img src={logo} alt="logo" width={50} height={50} />
             </Link>
@@ -22,7 +22,12 @@ const Header = () => {
           <div className={responsive ? "hideMenu" : "nav"}>
             {navLink.map((links, i) => {
               return (
-                <Link to={links.url} key={i}>
+                <Link
+                  to={links.url}
+                  key={i}
+                  onClick={responsiveHandler}
+                  data-aos="zoom-in-left"
+                >
                   {links.text}
                 </Link>
               );
