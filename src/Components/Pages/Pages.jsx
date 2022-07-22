@@ -12,7 +12,7 @@ import Footer from "../Common/Footer";
 const Pages = () => {
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
