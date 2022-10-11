@@ -1,4 +1,4 @@
-import "./App.css";
+import "../src/App.css";
 // import Pages from "./Components/Pages/Pages";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Aos from "aos";

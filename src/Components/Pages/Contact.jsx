@@ -98,7 +98,6 @@ const Contact = () => {
                   onChange={(e) => onChangeHandler(e, "body")}
                 ></textarea>
                 <Button
-                  data-aos="zoom-in-down"
                   onClick={sendMailHandler}
                   style={{ backgroundColor: "#e0a80d", color: "black" }}
                 >
