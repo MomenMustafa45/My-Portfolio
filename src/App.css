@@ -457,6 +457,10 @@ footer i {
     height: 60vh;
     margin-bottom: 250px;
   }
+
+  .hero h1 {
+    font-size: 50px;
+  }
   .heroContainer {
     max-width: 80%;
   }
