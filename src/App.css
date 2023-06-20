@@ -503,3 +503,9 @@ footer i {
     left: 80%;
   }
 }
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
