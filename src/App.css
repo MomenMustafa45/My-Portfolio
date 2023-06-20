@@ -9,6 +9,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
+.App {
+  overflow: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -492,7 +496,7 @@ footer i {
 
   .grid3,
   .grid4 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .scrollButton {
