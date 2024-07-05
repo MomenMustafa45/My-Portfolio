@@ -15,7 +15,7 @@ import {
   LinkedIn,
   GitHub,
 } from "@mui/icons-material";
-import cover from "../../assets/man.png";
+import cover from "../../assets/man.jpg";
 import port1 from "../../assets/port1.jpg";
 import port2 from "../../assets/port2.jpg";
 import port3 from "../../assets/port3.jpg";
@@ -70,7 +70,7 @@ export const about = [
       "Well-organised person, problem solver, independent employee with high attention to detail. Fan of MMA, outdoor activities, TV series and English literature. A family person and father of two fractious boys.",
     desc2:
       "Interested in the entire frontend spectrum and working on ambitious projects with positive people.",
-    cover: cover,
+    cover,
   },
 ];
 
