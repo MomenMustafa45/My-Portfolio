@@ -16,12 +16,12 @@ import {
   GitHub,
 } from "@mui/icons-material";
 import cover from "../../assets/man.jpg";
-import port1 from "../../assets/port1.jpg";
-import port2 from "../../assets/port2.jpg";
-import port3 from "../../assets/port3.jpg";
-import port4 from "../../assets/port4.jpg";
-import port5 from "../../assets/port5.jpg";
-import port6 from "../../assets/port6.jpg";
+import port1 from "../../assets/port1.png";
+import port2 from "../../assets/port2.png";
+import port3 from "../../assets/port3.png";
+import port4 from "../../assets/port4.png";
+import port5 from "../../assets/port5.png";
+import port6 from "../../assets/port7.png";
 import ti1 from "../../assets/team-1.png";
 import ti2 from "../../assets/team-2.jpg";
 
@@ -154,10 +154,10 @@ export const portfolio = [
   {
     id: 1,
     cover: port1,
-    name: "Develop Posts",
+    name: "Company's Website",
     category: "development",
-    title: "Blog Posts",
-    url: "https://momenmustafa45.github.io/blog-post-web/",
+    title: "Shift Advanced",
+    url: "https://shift-adv.com/",
   },
   {
     id: 2,
@@ -170,35 +170,35 @@ export const portfolio = [
   {
     id: 4,
     cover: port4,
-    name: "Books",
+    name: "Website",
     category: "development",
-    title: "Read Books",
-    url: "https://momenmustafa45.github.io/MyReads/",
+    title: "Gaman",
+    url: "https://capable-cajeta-e1ebe9.netlify.app/",
   },
   {
     id: 3,
     cover: port3,
-    name: "Brand",
+    name: "Books",
     category: "development",
-    title: "Brex Logo",
-    url: "https://momenmustafa45.github.io/ecommerce-project/",
+    title: "My Reads",
+    url: "https://momenmustafa45.github.io/MyReads/",
   },
 
   {
     id: 5,
     cover: port5,
-    name: "Brand",
-    category: "design",
-    title: "Brex Logo",
-    url: "https://momenmustafa45.github.io/ecommerce-project/",
+    name: "Movies",
+    category: "development",
+    title: "WatchMovies",
+    url: "https://night-movies.vercel.app",
   },
   {
     id: 6,
     cover: port6,
-    name: "Brand",
+    name: "Mobile App",
     category: "development",
-    title: "Brex Logo",
-    url: "https://momenmustafa45.github.io/ecommerce-project/",
+    title: "Delivery App",
+    url: "https://drive.usercontent.google.com/download?id=1T1MUcgVlPYdSMBAkFy06JD1KXOnZA7UH&export=download&authuser=0",
   },
 ];
 
