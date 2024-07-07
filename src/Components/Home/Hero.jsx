@@ -24,7 +24,7 @@ const Hero = () => {
             <p data-aos="fade-left">{item.desc}</p>
             <button className="primaryBtn" data-aos="fade-up-right">
               <Link
-                href="https://drive.google.com/file/d/14lYOJPQNlSlpD-QbnzbBTtmtmCVjUbtW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Zg-iEnyVJdpKCfPE547JF213RyUDCI38/view?usp=sharing"
                 target="_blank"
                 style={{ textDecoration: "none", color: "#e0a80d" }}
               >
